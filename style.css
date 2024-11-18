@@ -1,0 +1,115 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variáveis de tema */
+  :root {
+    --cor-primaria: #4CAF50;
+    --cor-secundaria: #f1f1f1;
+    --cor-texto: #333;
+  }
+  
+  /* Layout */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+  }
+  
+  header {
+    background-color: var(--cor-primaria);
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--cor-primaria);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Perfil */
+  .perfil-container {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  input {
+    display: block;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
